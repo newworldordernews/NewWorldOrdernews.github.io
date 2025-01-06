@@ -119,6 +119,18 @@ body {
 }
 
 
+/* Mobile Styles: Posts appear one under the other */
+
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout for mobile */
+        gap: 15px;
+        /* Adjust spacing for smaller screens */
+    }
+}
+
+
 /* Footer Styles */
 
 footer {
