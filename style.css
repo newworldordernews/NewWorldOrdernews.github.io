@@ -227,7 +227,7 @@ footer {
     /* Ensure each post stacks its content vertically */
     border: 1px solid #ccc;
     /* Optional: Add a border around each post */
-    padding: 5px;
+    padding: 2px;
     /* Optional: Add padding inside each post */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Optional: Add a shadow for better design */
