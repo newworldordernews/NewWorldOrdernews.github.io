@@ -206,21 +206,33 @@ footer {
 
 /* Side Posts Design */
 
+.main-post,
 .side-posts {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    flex-direction: column;
+    /* Stack items vertically */
     gap: 20px;
+    /* Add space between posts */
 }
 
 .post {
-    width: 280px;
-    background: linear-gradient(135deg, #c3cfe2, #e2eafc);
-    /* Gradient for side posts */
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 15px;
+    width: 100%;
+    /* Ensure posts take full width of container */
+    max-width: 800px;
+    /* Optional: Limit maximum width */
+    margin: 0 auto;
+    /* Center-align the posts */
+    display: flex;
+    flex-direction: column;
+    /* Ensure each post stacks its content vertically */
+    border: 1px solid #ccc;
+    /* Optional: Add a border around each post */
+    padding: 10px;
+    /* Optional: Add padding inside each post */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow for better design */
+    background-color: #fff;
+    /* Optional: Background color */
 }
 
 .post img {
