@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Post Display</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e6683c, #dc2743, #bc1888);
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .website-name {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+            color: #fff;
+            z-index: 100;
+        }
+        
+        .main-heading {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+        
+        .main-post,
+        .side-posts {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .post {
+            margin-bottom: 20px;
+        }
+        
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .post-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #333;
+        }
+        
+        .post-description {
+            font-size: 1rem;
+            margin-top: 5px;
+            color: #666;
+        }
+        
+        .post-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .info-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .info-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .info-button a:hover {
+            background: #0056b3;
+        }
+        
+        @media (max-width: 768px) {
+            .main-post,
+            .side-posts {
+                padding: 15px;
+            }
+            .post-title {
+                font-size: 1rem;
+            }
+            .post-description {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,10 +116,9 @@
     <div class="main-post" id="main-post">
         <div class="post">
             <a href="news1.html">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczO1RVRONBaInflaTmoneICBBhQGRAfycmTa_J66wHHJ_rhV-NZU3DFjgjAX9Nm7hBe9GwzD6Hz0kwwWVAPXrVItAiKunAXj8fPN33-eDnUOxSL4dA=w540-h315-p-k" alt="Side Post Image" style="width: 250px; height: 150px;">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczO1RVRONBaInflaTmoneICBBhQGRAfycmTa_J66wHHJ_rhV-NZU3DFjgjAX9Nm7hBe9GwzD6Hz0kwwWVAPXrVItAiKunAXj8fPN33-eDnUOxSL4dA=w540-h315-p-k" alt="Side Post Image">
 
                 <div class="post-title">South Korea’s President Faces Arrest as Protests Mount: Political Turmoil Deepens Amid Failed Martial Law Bid
-
                 </div>
                 <div class="post-description">Description of the main post goes here...</div>
             </a>
@@ -37,7 +132,7 @@
     <div class="side-posts" id="side-posts">
         <div class="post">
             <a href="news2.html">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczODtF3ZjHtgTBts9PK0KpqCuHgDFDEuk0358Uq-HOCNBnzDkPdHkRHk5m4ujoFEFO3v_9LCqI3OARIh9zM_bl0Bhqke5HQ219a7VbgnH82SZduqlA=w600-h315-p-k" alt="Side Post Image" style="width: 380px; height: 215px;">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczODtF3ZjHtgTBts9PK0KpqCuHgDFDEuk0358Uq-HOCNBnzDkPdHkRHk5m4ujoFEFO3v_9LCqI3OARIh9zM_bl0Bhqke5HQ219a7VbgnH82SZduqlA=w600-h315-p-k" alt="Side Post Image">
 
                 <div class="post-title">Israeli Airstrikes Intensify in Gaza Amid Ceasefire Talks: Rising Tensions and Casualties Raise Concerns
                 </div>
@@ -52,10 +147,9 @@
         <div class="post">
             <a href="news3.html">
 
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczPCGjHX7Gs1IflPm3yDKo2k_1rH-jd7z5vbG8wi8ERCZE06TJvPB-W0QSDaYlbucu8uxIa2P1cp8kGRqntEn8Sf_htV3AjZs7t8nlQk10ZWmbnYGQ=w600-h315-p-k " alt="Side Post Image" style="width: 380px; height: 215px;">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPCGjHX7Gs1IflPm3yDKo2k_1rH-jd7z5vbG8wi8ERCZE06TJvPB-W0QSDaYlbucu8uxIa2P1cp8kGRqntEn8Sf_htV3AjZs7t8nlQk10ZWmbnYGQ=w600-h315-p-k " alt="Side Post Image">
 
                 <div class="post-title">Severe Winter Storm Hits Europe: Travel Chaos Unfolds as Snow and Ice Disrupt Flights and Roads
-
                 </div>
                 <div class="post-description">Description of the main post goes here...</div>
             </a>
@@ -67,7 +161,7 @@
 
         <div class="post">
             <a href="news4.html">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczOMt6vvfYogUbsOM-inMLnIEIgEMICfRgKVcpTr6tax8R1Joed5k6pdjx_xrmr-y14BoMSlIBwBGWsnGYwFRsOD4URQZShTm2Rkcfv7WZLgyc1XwQ=w600-h315-p-k" alt="Side Post Image" style="width: 380px; height: 215px;">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOMt6vvfYogUbsOM-inMLnIEIgEMICfRgKVcpTr6tax8R1Joed5k6pdjx_xrmr-y14BoMSlIBwBGWsnGYwFRsOD4URQZShTm2Rkcfv7WZLgyc1XwQ=w600-h315-p-k" alt="Side Post Image">
 
                 <div class="post-title">Cryptocurrency Market Trends 2025: Bitcoin Surges Past $100K, Institutional Adoption Drives Growth Amid Regulatory Shifts</div>
                 <div class="post-description">Description of the main post goes here...</div>
@@ -77,14 +171,12 @@
                 <div class="post-date">Date: 3-1-25</div>
             </div>
 
-
             <!-- Information Button -->
             <div class="info-button">
                 <a href="information.html" target="_blank">Information</a>
             </div>
-
-
-            <script src="script.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>
