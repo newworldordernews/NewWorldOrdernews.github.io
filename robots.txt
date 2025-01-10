@@ -1,0 +1,4 @@
+User-agent: *
+ALLOW:
+
+Sitemap: https://newworldordernews.github.io/sitemap.xml
