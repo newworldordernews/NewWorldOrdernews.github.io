@@ -406,7 +406,7 @@ body {
 .back-button a {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #ff6f61, #ffcc00, #00bcd4);
     color: white;
     text-decoration: none;
     border-radius: 5px;
