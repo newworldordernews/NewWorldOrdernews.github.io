@@ -416,6 +416,6 @@ body {
 }
 
 .back-button a:hover {
-    background: linear-gradient(135deg, #ff758c, #ff3f81);
+    background: linear-gradient(135deg, #ff6f61, #ffcc00, #00bcd4);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
