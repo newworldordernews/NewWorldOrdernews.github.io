@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "71cbdb16-d041-4294-bf76-db4c22a78537",
+    });
+  });
+</script>
+    
     <meta name="google-site-verification" content="0fyrL0SlSJoTnk69I9F_JvzcUeH8uF3lAz7GKFsy3CI" />
     
     <meta charset="UTF-8">
